@@ -72,13 +72,19 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <p>A continuación podrás insertar la infromación del curso</p>
-                                    <label>Nombre del curso:</label>
-                                    <input class="form-control" name="courseName" id="courseName" value="Introducción práctica a Blockchain para desarrolladores"
-                                        required>
-                                    <label>Tipo de certificado:</label>
-                                    <input class="form-control" name="courseCertificated" id="courseCertificated" value="Certificado de Asistencia" required>
-                                    <label>Fechas del curso:</label>
-                                    <input class="form-control" name="courseDate" id="courseDate" value="los días 21,22,23 y 24 de Enero 2017" required>
+                                    <div class="form-group">
+                                        <label>Nombre del curso:</label>
+                                        <input class="form-control" name="courseName" id="courseName" value="Introducción práctica a Blockchain para desarrolladores"
+                                            required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Tipo de certificado:</label>
+                                        <input class="form-control" name="courseCertificated" id="courseCertificated" value="Certificado de Asistencia" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Fechas del curso:</label>
+                                        <input class="form-control" name="courseDate" id="courseDate" value="los días 21,22,23 y 24 de Enero 2017" required>
+                                    </div>
                                 </div>
                                 <div class="panel panel-primary">
                                     <div class="panel-heading">Información del usuario</div>
@@ -101,15 +107,17 @@
                                 </div>
                                 <button id="submit-form" type="submit" class="btn btn-primary">Crear certificado</button>
                                 <div id="loading-section" style="display:none">
-                                    <img style="margin: 10px" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
-                                    <p>Este proceso puede llevar varios minutos. Espera por favor. Puedes consultar el estado de la transacción <a id="transacion-id-link" target="_blank" href="">aquí</a>.</p>
+                                    <img style="margin: 10px" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA=="
+                                    />
+                                    <p>Este proceso puede llevar varios minutos. Espera por favor. Puedes consultar el estado
+                                        de la transacción
+                                        <a id="transacion-id-link" target="_blank" href="">aquí</a>.</p>
                                 </div>
 
                                 <div id="certificate-link-container" class="message success" style="display:none;">
                                     <p>
                                         <strong>¡Certificado creado! </strong> ¡Puedes verlo
-                                        <a id="certificate-link" target="_blank"
-                                            href="#">aquí</a>!</p>
+                                        <a id="certificate-link" target="_blank" href="#">aquí</a>!</p>
                                 </div>
 
                                 <div id="certificate-error-container" class="message error" style="display:none;">
