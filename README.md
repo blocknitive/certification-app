@@ -8,7 +8,7 @@ Además tienes la libertad de modificar el código y desplegarlo para lanzar tus
 
 Con las siguientes instrucciones vas a poder descargarte el código y ejecutarlo en tu máquina.
 
-### Prerequisites
+### Prerrequisitos
 
 Para poder ejecutar este proyecto vas a necesitar instalar la última versión estable de [NodeJS](https://nodejs.org/), tener un navegador [Chrome](https://www.google.com/chrome/browser/desktop/index.html) e instalar en él la extensión [Metamask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn).
 
