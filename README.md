@@ -1,23 +1,40 @@
+# certification-app
 
+Con este proyecto queremos mostrarte una forma de registrar certificados en la blockchain de Ethereum. En la carpeta 'truffle' tienes el Smart Contract que hemos desarrollado contemplado un caso de uso mas complejo para darte una pequeña muestra de hasta donde puedes llegar escribiendo contratos con Solidity.
 
-## Requisitos
-Esta aplicación requiere de:
-* Usar un navegador [Chrome](https://www.google.com/chrome/browser/desktop/index.html) con [Metamask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn) instalado.
-* Tener instalado [NodeJS](https://nodejs.org/) v8.9.4 o superior.
+Además tienes la libertad de modificar el código y desplegarlo para lanzar tus pruebas.
 
-## Instalación
-Para ejecutar esta aplicación es necesario seguir los siguientes pasos.
-1. Clonar repositorio
-2. Navegar en consola a la carpeta del proyecto
-3. Ejecutar: 
-```bash 
-npm install
+## Empezando
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+### Prerequisites
+
+Para poder ejecutar este proyecto vas a necesitar instalar la última versión estable de [NodeJS](https://nodejs.org/), tener un navegador [Chrome](https://www.google.com/chrome/browser/desktop/index.html) e instalar en él la extensión [Metamask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn).
+
+Además si vas a querer compilar el Smart Contract de prueba te recomendamos que uses la librería [truffle](https://github.com/trufflesuite/truffle) 
+
 ```
-4. Y luego
-```bash
+$ npm install -g truffle
+```
+
+[Aquí](https://www.youtube.com/watch?v=Wc8pV3C8DGs) te dejamos un video introductorio sobre como usar truffle
+
+Además si vas a ejecutar el proyecto en un Windows va a ser necesario que te instales el siguiente paquete:
+```
+$ npm install -g truffle windows-build-tools
+```
+
+
+### Instalación
+
+Para arrancar el proyecto solo ejecuta en la carpeta raíz de este:
+
+```
+npm install
 npm start
 ```
-5. La app será accesible desde http://localhost:3000
 
+La ventana de login es solo una muestra, puedes acceder poniendo cualquier correo y cualquier contraseña. :wink:
 
-**IMPORTANTE:** Si estás haciendo pruebas aségurate de tener el Metamask conectado a la red de pruebas Ropsten Test Net.
+**Importante:** Asegurate de estar conectado a la red Ropsten en tu extensión MetaMask.
