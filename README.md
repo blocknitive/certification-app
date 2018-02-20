@@ -6,7 +6,7 @@ Además tienes la libertad de modificar el código y desplegarlo para lanzar tus
 
 ## Empezando
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Con las siguientes instrucciones vas a poder descargarte el código y ejecutarlo en tu máquina.
 
 ### Prerequisites
 
@@ -28,9 +28,11 @@ $ npm install -g truffle windows-build-tools
 
 ### Instalación
 
-Para arrancar el proyecto solo ejecuta en la carpeta raíz de este:
+Para arrancar el proyecto ve a la carpeta donde quieres clonarlo y ejecuta los siguientes comandos:
 
 ```
+git clone https://github.com/blocknitive/certification-app.git
+cd certification-app
 npm install
 npm start
 ```
