@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es-419">
+
+<head dir="ltr">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="/images/favicon.ico">
+    <title>eBlockfy OfficialCertifcate</title>
+    <link rel="stylesheet" href="/css/devcss.css">
+</head>
+
+<body class="layout-accomplishment view-valid-accomplishment ltr is-idverified certificate certificate-verified" data-view="valid-accomplishment">
+    <div class="wrapper-view" dir="ltr">
+        <div class="wrapper-header">
+            <header class="header-app" role="banner">
+                <h1 class="header-app-title">
+                    <a class="logo" target="_blank" href="http://eblockfy.com/">
+                        <img class="logo-img" src="/images/eblockfy-logo.png" alt="Inicio de dev">
+                    </a>
+                    <span class="sr-only">Certificado eBlockfy</span>
+                </h1>
+            </header>
+        </div>
+
+        <hr class="divider sr-only">
+
+        <main class="accomplishment accomplishment-main">
+
+            <div class="wrapper-accomplishment-rendering">
+                <div class="accomplishment-rendering">
+                    <div class="wrapper-accomplishment-title verified">
+                        <h2 class="accomplishment-title">
+                            <span class="accomplishment-title-label">VERIFICADO</span>
+                            <span class="accomplishment-title-type">
+                                <%= courseCertificated %>
+                            </span>
+                        </h2>
+                        <div class="wrapper-accomplishment-orgs">
+                            <h3 class="accomplishment-orgs-title sr-only">Con el apoyo de las siguientes organizaciones</h3>
+                            <ul class="wrapper-orgs list-orgs">
+                                <li class="wrapper-organization">
+                                    <div class="organization">
+                                        <img class="organization-logo" src="/images/eblockfy-logo.png" alt="logo">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="wrapper-accomplishment-statement">
+                        <div class="accomplishment-statement">
+                            <p class="accomplishment-statement-lead">
+                                <span class="accomplishment-statement-detail copy">Se certifica que</span>
+                                <strong class="accomplishment-recipient">
+                                    <%= alumnName %>
+                                </strong>
+                                <span class="accomplishment-summary copy">ha realizado con éxito el curso</span>
+
+                                <span class="accomplishment-course">
+                                    <span class="accomplishment-course-name">
+                                        <%= courseName %>
+                                    </span>
+                                </span>
+                                <span class="accomplishment-statement-detail copy">
+                                    <%= courseDate %>
+                                </span>
+                                <span class="accomplishment-statement-detail copy">un curso ofrecido por eBlockfy.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="wrapper-accomplishment-stamps">
+                        <ul class="accomplishment-stamps copy-list">
+                            <li class="accomplishment-stamp-platform">
+                                <img class="logo-img" src="/images/certified.png" height="20%" alt="dev">
+                            </li>
+                            <li class="accomplishment-stamp-date">
+                                <span class="title">Certificado creado el día</span>
+                                <span class="copy-micro emphasized">
+                                    <%= certificationDate %>
+                                </span>
+                            </li>
+                            <li class="accomplishment-stamp-platform">
+                                    <img class="logo-img" src="/images/Blockchain.png" height="20%" alt="dev">
+                            </li>
+                            <% if (txId) { %>
+                                <li class="accomplishment-stamp-validity">
+                                    <span class="title">Ethereum Transaction ID</span>
+                                    <span class="emphasized">
+                                        <a target="_blank" href="https://ropsten.etherscan.io/tx/<%= txId %>">
+                                            <%= txId %>
+                                        </a>
+                                    </span>
+                                </li>
+                                <% } %>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="wrapper-accomplishment-metadata">
+                <div class="accomplishment-metadata">
+                    <div class="accomplishment-metadata-bit accomplishment-metadata-aboutdev">
+                        <h3 class="accomplishment-metadata-title">About eBlockfy</h3>
+                        <p class="accomplishment-metadata-copy">
+                            <a href="http://eblockfy.com/">eBlockfy</a> offers different academic programs in different areas such Big Data, DevOps, Data
+                            Science & Fintech. We seek to reduce the learning curve to software developers in innovative
+                            areas of digital transformation.</p>
+                    </div>
+
+                    <div class="accomplishment-metadata-bit accomplishment-metadata-aboutcert">
+                        <h3 class="accomplishment-metadata-title">
+                            About eBlockfy Certificates
+                        </h3>
+                        <p class="accomplishment-metadata-copy">
+                            At eBlockfy we are pioneers in using Blockchain Technologie to issue our certificates of assistance or knowledge. Once
+                            we issue the certificate in Ethereum's public Blockchain network it will always be there under
+                            a reliable and validated time stamp throughout the public network.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <hr class="divider sr-only">
+
+        <div class="wrapper-footer">
+            <footer class="footer-app" role="contentinfo" id="company-info">
+                <div class="footer-app-legal">
+                    <nav class="footer-app-nav">
+                        <ul class="list list-legal">
+                            <li class="nav-item">
+                                <a class="action" href="#">Print PDF: Ctrl + P</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="copyright-trademarks">
+                        <p class="copy">
+                            <span class="copyright">©
+                                <a href="http://www.eBlockfy.com/">eBlockfy.com</a>
+                            </span>
+                            All rights reserved to eBlockfy & Wake Forest SL.</p>
+                    </div>
+                </div>
+                <div class="footer-app-related">
+                    <a class="img-link" href="http://eblockfy.com/">
+                        <img class="logo-img logo-opendev" src="/images/eblockfy-logo.png" alt="Powered by Open dev">
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>

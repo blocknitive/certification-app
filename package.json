@@ -1,0 +1,20 @@
+{
+  "name": "certification-app",
+  "version": "0.1.0",
+  "description": "A simple web example of work with the Ethereum Blockchain for makes certifications.",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "buffer": "^5.0.8",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "ipfs": "^0.27.7",
+    "moment": "^2.0.0",
+    "path": "^0.12.7"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Blocknitive",
+  "license": "ISC"
+}
